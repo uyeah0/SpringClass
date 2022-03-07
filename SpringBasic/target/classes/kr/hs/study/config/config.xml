@@ -10,8 +10,9 @@
  						http://www.springframework.org/schema/aop
 						http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<!-- TestBean test1 = new TestBean(); -->
-	<bean id = "test1" class = "kr.hs.study.beans.TestBean"/>
-						
-						
+	<!-- TestBean객체 생성 해줘 -->
+	<bean id = "t1" class = "kr.hs.study.beans.TestBean"/>
+	
+	<!-- <bean id = "t2" class = "kr.hs.study.beans.TestBean"/> -->
+	<!-- TestBean t1 = new TestBean() -->									
 </beans>

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldEn.HelloWorldKr"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldEn"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Hello"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
+    <fullyQualifiedTypeName name="HelloWorld"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldEn"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldKr"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorld"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
 </qualifiedTypeNameHistroy>

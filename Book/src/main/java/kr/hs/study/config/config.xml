@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd
+ 						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- <bean id = "b1" class = "kr.hs.study.beans.Book"/>
+	<bean id = "novel1" class = "kr.hs.study.beans.novel"/>
+	<bean id = "poet1" class = "kr.hs.study.beans.poet"/> -->
+	
+		
+	<bean id = "novel1" class = "kr.hs.study.beans.novel">
+		<property name="writer" value = "kim"></property>
+		<property name="price" value = "8000"></property>
+		<property name="bookName" value = "spring"></property>
+	</bean>
+	<bean id = "poet1" class = "kr.hs.study.beans.poet">
+		<property name="writer" value = "lee"></property>
+		<property name="price" value = "10000"></property>
+		<property name="bookName" value = "spring2"></property>
+	</bean>
+	
+	<bean id = "magazine1" class = "kr.hs.study.beans.magazine">
+		<property name="writer" value = "park"></property>
+		<property name="price" value = "20000"></property>
+		<property name="bookName" value = "spring3"></property>
+	</bean>
+	
+
+									
+</beans>

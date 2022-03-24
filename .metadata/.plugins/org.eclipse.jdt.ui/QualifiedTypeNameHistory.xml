@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldKr"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorld"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
     <fullyQualifiedTypeName name="kr.hs.study.config.BeanClassConfiguration"/>
     <fullyQualifiedTypeName name="java.security.CodeSigner"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Employee"/>
@@ -16,16 +15,20 @@
     <fullyQualifiedTypeName name="kr.hs.study.beans.Developer"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Flow.Publisher"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Publisher"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.novel"/>
     <fullyQualifiedTypeName name="kr.hs.study.main.MainClass"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Book"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfigClass"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean4"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean4"/>
 </qualifiedTypeNameHistroy>

@@ -18,6 +18,7 @@ public class BeanConfigClass {
 	public DataBean2 d2() {
 		return new DataBean2();
 	}
+	
 	@Bean
 	public TestBean2 java1() {
 		return new TestBean2();

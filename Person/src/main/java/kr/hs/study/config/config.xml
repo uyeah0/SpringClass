@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd
+ 						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<!-- 클래스에 있는 autowired, qualifier를 알아서 분석하고 실행해라 -->
+	
+	<bean id = "p" class = "kr.hs.study.beans.Person"></bean>
+	<bean id = "t1" class = "kr.hs.study.beans.Test">
+		<constructor-arg ref = "p"> </constructor-arg>
+	</bean>
+	
+</beans>

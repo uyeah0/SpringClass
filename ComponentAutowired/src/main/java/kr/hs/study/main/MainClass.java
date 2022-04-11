@@ -4,10 +4,10 @@ package kr.hs.study.main;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import kr.hs.study.beans.TestBean1;
-import kr.hs.study.beans.TestBean2;
 import kr.hs.study.config.BeanConfigClass;
 
 public class MainClass {

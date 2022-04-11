@@ -13,9 +13,6 @@
 	<context:annotation-config></context:annotation-config>
 	<!-- 클래스에 있는 autowired, qualifier를 알아서 분석하고 실행해라 -->
 	
-	<bean id = "p" class = "kr.hs.study.beans.Person"></bean>
-	<bean id = "t1" class = "kr.hs.study.beans.Test">
-		<constructor-arg ref = "p"> </constructor-arg>
-	</bean>
+	
 	
 </beans>

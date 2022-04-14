@@ -10,8 +10,22 @@
  						http://www.springframework.org/schema/aop
 						http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<bean id = "designer" class = "kr.hs.study.beans.Designer"/>
-	<bean id = "developer" class = "kr.hs.study.beans.Developer"></bean>
-	<bean id = "publisher" class = "kr.hs.study.beans.Publisher"/>
-									
+	<bean id = "advisor" class = "kr.hs.study.advisor.AdvisorClass"/>
+	<bean id = "t1" class = "kr.hs.study.beans.TestBean1"/>
+	
+	<aop:config>
+		<aop:aspect ref = "advisor">
+		<aop:pointcut expression="execution(* method1())" id="point"/>
+		<!-- 
+		* : 리턴타임 상관없고, 모든패키지, 모든 클래스에 있는 모든 method1()을 pointcut으로 지정 advice로 지정 
+		-->
+		<aop:before method="beforeMethod" pointcut-ref = "point"/>
+		<!-- method1이 실행되기 전에 beforeMethod가 먼저 실행된다. -->
+		
+		<!-- afterMethod실행하게해보기 -->
+		<aop:after method="afterMethod"	pointcut-ref="point"/>
+		
+		</aop:aspect>
+	</aop:config>
+										
 </beans>

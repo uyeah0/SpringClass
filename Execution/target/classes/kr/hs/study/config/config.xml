@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd
+ 						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<bean id = "advisor" class ="kr.hs.study.advisor.AdvisorClass"/>
+	<bean id = "t1" class = "kr.hs.study.beans.TestBean1"></bean>
+	
+	<aop:config>
+	<aop:aspect ref = "advisor">
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1()))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 method1() 메서드가 관심메서드이다 method1이 실행되면 beforeMethod 실행 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(int)))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 int 매개변수를 받는 method1(int) 메서드가 관심메서드이다 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(java.lang.String)))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 String 매개변수를 받는 method1(java.lang.String) 메서드가 관심메서드이다 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(*)))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 모든 타입의 매개변수 1개가 관심메서드이다 -->
+		
+		<aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(int, int)))" />
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 정수형 매개변수 2개 method1(int,int)가 관심메서드이다 -->
+		
+		<aop:before method = "beforeMethod" pointcut-ref="point"/>
+	</aop:aspect>
+	
+	</aop:config>
+										
+</beans>

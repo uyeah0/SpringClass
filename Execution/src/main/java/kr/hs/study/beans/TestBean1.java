@@ -9,15 +9,23 @@ public class TestBean1 {
 	}
 	
 	public void method1(int a1) {
-		System.out.println("int 매개변수 method1");
+		System.out.println("int method1");
 	}
 	
 	public void method1(int a1, int a2) {
-		System.out.println("int 매개변수 2개 method1");
+		System.out.println("int int method1");
 	}
 	
 	public void method1(String s1) {
-		System.out.println("spring 매개변수 method1");
+		System.out.println("string method1");
+	}
+	
+	public void method1(int a1, String s1) {
+		System.out.println("int,string method1");
+	}
+
+	public void method1(String s1, String s2) {
+		System.out.println("string string method1");
 	}
 	
 	public void method2() {

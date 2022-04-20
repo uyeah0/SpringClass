@@ -27,8 +27,40 @@
 		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(*)))" /> -->
 		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 모든 타입의 매개변수 1개가 관심메서드이다 -->
 		
-		<aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(int, int)))" />
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(int, int)))" /> -->
 		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 정수형 매개변수 2개 method1(int,int)가 관심메서드이다 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(int, String)))" />
+		return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 정수형 매개변수 1개, 문자열 매개변수 1개가 관심메서드이다 -->
+		
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(*, *)))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 method1, 모든 타입의 매개변수 2개 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.method1(..))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스의 method1, 모든 타입의 매개변수 0개이상(0개이면안됨) -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.TestBean1.*(..))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 TestBean1 클래스, 모든 메서드 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.*(..).method1))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 모든 클래스, method1메서드 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.beans.*.*(..)))" /> -->
+		<!-- return 타입은 void, kr.hs.study.beans 패키지의 모든 클래스, 모든 메서드 -->
+
+
+		<!-- <aop:pointcut id="point" expression="execution(void kr.hs.study.*.*.*(..)))" /> -->
+		<!-- return 타입은 void, kr.hs.study의 모든 패키지의 모든 클래스, 모든 메서드 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(void *.*(..)))" /> * : 패키지와 클래스 묶기-->
+		<!-- return 타입은 void, 모든 패키지의 모든 클래스, 모든 메서드 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(int *.*(..)))" /> -->
+		<!-- return 타입은 int, 모든 패키지의 모든 클래스, 모든 메서드 -->
+		
+		<!-- <aop:pointcut id="point" expression="execution(* *.*(..)))" /> -->
+		<!-- 모든 리턴타입, 모든 패키지의 모든 클래스, 모든 메서드 -->
 		
 		<aop:before method = "beforeMethod" pointcut-ref="point"/>
 	</aop:aspect>

@@ -15,6 +15,7 @@ public class MainClass {
 		TestDAO dao = ctx.getBean(TestDAO.class);
 		
 		// 2. TestBean 객체 t1 만들어서 10, spring 넣기
+		/*
 		TestBean t1 = ctx.getBean(TestBean.class);
 		t1.setId("kim");
 		t1.setPassword("1111");
@@ -32,6 +33,15 @@ public class MainClass {
 		dao.insert_data(t2);
 		dao.insert_data(t3);
 		System.out.println("inserted!!");
+		*/
+		
+		TestBean t4 = ctx.getBean(TestBean.class);
+		t4.setId("kim");
+		t4.setPassword("1234");
+		
+		// 3. dao의 inser_data 호출
+		dao.update_data(t4);
+		System.out.println("updated!!");
 		
 		ctx.close();
 

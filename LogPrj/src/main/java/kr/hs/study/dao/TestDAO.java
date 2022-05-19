@@ -22,4 +22,10 @@ public class TestDAO {
 		String sql = "insert into logprj values(?,?)";
 		db.update(sql, bean.getId(), bean.getPassword());
 	}
+	
+	public void update_data(TestBean bean) {
+		// Container에 있는 TestBean객체가 bean에 자동주입됨
+		String sql = "update logprj set password = ? where id = ?";
+		db.update(sql, bean.getPassword(), bean.getId());
+	}
 }

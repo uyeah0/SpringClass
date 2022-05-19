@@ -11,11 +11,14 @@ import kr.hs.study.dao.TestDAO;
 public class MainClass {
 
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanConfigClass.class);
+		
+		  AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanConfigClass.class);
+		 
 		
 		// 1. dao 가지고 오기
 		TestDAO dao = ctx.getBean(TestDAO.class);
 		
+		/*
 		// 2. TestBean 객체 t1 만들어서 10, spring 넣기
 		TestBean t1 = ctx.getBean(TestBean.class);
 		t1.setData1(10);
@@ -25,7 +28,14 @@ public class MainClass {
 		dao.insert_data(t1);
 		
 		System.out.println("inserted!!");
+		*/
 		
+		TestBean t3 = new TestBean();
+		t3.setData1(10);
+		t3.setData2("spring1010");
+		dao.update_data(t3);
+		
+		System.out.println("updated!!");
 		ctx.close();
 
 	}

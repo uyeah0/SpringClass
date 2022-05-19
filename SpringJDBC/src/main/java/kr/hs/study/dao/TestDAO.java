@@ -23,7 +23,12 @@ public class TestDAO {
 		db.update(sql, bean.getData1(), bean.getData2());
 	}
 	
-	
+	// 2. update
+	public void update_data(TestBean bean) {
+		// TestBean bean = new TestBean(); => @Component 자동으로 주입
+		String sql = "update test set data2 = ? where data1 = ?";
+		db.update(sql, bean.getData2(), bean.getData1());
+	}
 	
 	
 	

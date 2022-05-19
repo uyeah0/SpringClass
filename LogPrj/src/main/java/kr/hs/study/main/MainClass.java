@@ -33,15 +33,23 @@ public class MainClass {
 		dao.insert_data(t2);
 		dao.insert_data(t3);
 		System.out.println("inserted!!");
-		*/
 		
+		// update
 		TestBean t4 = ctx.getBean(TestBean.class);
 		t4.setId("kim");
 		t4.setPassword("1234");
 		
-		// 3. daoÀÇ inser_data È£Ãâ
 		dao.update_data(t4);
 		System.out.println("updated!!");
+		
+				*/
+		
+		// delete
+		TestBean t5 = ctx.getBean(TestBean.class);
+		t5.setId("kim");
+		
+		dao.delete_data(t5);
+		System.out.println("deleted!!");
 		
 		ctx.close();
 

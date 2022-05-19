@@ -28,4 +28,11 @@ public class TestDAO {
 		String sql = "update logprj set password = ? where id = ?";
 		db.update(sql, bean.getPassword(), bean.getId());
 	}
+	
+	// 3. delete
+		public void delete_data(TestBean bean) {
+			// Container에 있는 TestBean객체가 bean에 자동주입됨
+			String sql = "delete from logprj where id= ?";
+			db.update(sql, bean.getId());
+		}
 }

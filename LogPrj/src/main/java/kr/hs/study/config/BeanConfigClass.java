@@ -22,7 +22,7 @@ public class BeanConfigClass {
 	}
 	
 	// DB에 자동 주입을 해야함
-	// db에 접속해서 실제 쿼리를 실행하ㅡㄴ 예으르 bean으로 등록
+	// db에 접속해서 실제 쿼리를 실행하 bean으로 등록
 	@Bean
 	public JdbcTemplate db(BasicDataSource source) {
 		JdbcTemplate db = new JdbcTemplate(source);

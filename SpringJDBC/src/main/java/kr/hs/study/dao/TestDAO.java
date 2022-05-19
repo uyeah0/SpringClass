@@ -30,16 +30,12 @@ public class TestDAO {
 		db.update(sql, bean.getData2(), bean.getData1());
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// 3. delete 
+	public void delete_date(TestBean bean) {
+		// TestBean bean = new TestBean(); => @Component 자동으로 주입
+		String sql = "delete from test where data1 = ?";
+		db.update(sql, bean.getData1());
+	}
 	
 
 }

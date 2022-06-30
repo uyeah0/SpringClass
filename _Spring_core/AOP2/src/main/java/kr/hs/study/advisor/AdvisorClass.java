@@ -4,12 +4,12 @@ import org.aspectj.lang.ProceedingJoinPoint;
 
 public class AdvisorClass {
 	public void beforeMethod() {
-		System.out.println("Ãæ°í advice È¾´Ü°ü½É»ç");
+		System.out.println("ì¶©ê³  advice íš¡ë‹¨ê´€ì‹¬ì‚¬");
 	}
 	
 	public void aroundMethod(ProceedingJoinPoint pjp) throws Throwable{
-		System.out.println("around ¸Þ¼Òµå");
+		System.out.println("around ë©”ì†Œë“œ");
 		pjp.proceed();
-		System.out.println("around ¸Þ¼Òµå È£Ãâ");
+		System.out.println("around ë©”ì†Œë“œ í˜¸ì¶œ");
 	}
 }

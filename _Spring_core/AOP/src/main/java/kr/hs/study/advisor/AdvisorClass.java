@@ -4,25 +4,25 @@ import org.aspectj.lang.ProceedingJoinPoint;
 
 public class AdvisorClass {
 	public void beforeMethod() {
-		System.out.println("AdviceÀÇ Before Method");
+		System.out.println("Adviceì˜ Before Method");
 	}
 	public void afterMethod() {
-		System.out.println("AdviceÀÇ After Method");
+		System.out.println("Adviceì˜ After Method");
 	}
 	
 	public void aroundMethod(ProceedingJoinPoint pjp) throws Throwable{
-		System.out.println("around¸Ş¼­µå È£Ãâ1");
-		pjp.proceed(); // ½ÇÁ¦ ÇÙ½É ¸Ş¼­µå ½ÇÇà
-		System.out.println("around¸Ş¼­µå È£Ãâ2");
+		System.out.println("aroundë©”ì„œë“œ í˜¸ì¶œ1");
+		pjp.proceed(); // ì‹¤ì œ í•µì‹¬ ë©”ì„œë“œ ì‹¤í–‰
+		System.out.println("aroundë©”ì„œë“œ í˜¸ì¶œ2");
 			
 	}
 	
 	public void afterReturningMethod() {
-		System.out.println("afterReturningMethod È£Ãâ");
+		System.out.println("afterReturningMethod í˜¸ì¶œ");
 	}
 	
 	public void afterThrowingMethod(Throwable e) {
-		System.out.println("afterThrowingMethod È£Ãâ");
+		System.out.println("afterThrowingMethod í˜¸ì¶œ");
 		System.out.println("e:" + e);
 	}
 }

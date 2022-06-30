@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>sum</h1>
-	<h2>sum : ${ sum }</h2>
+	<h2>1부터 10까지의 합 : ${ sum }</h2>
 	
 </body>
 </html>

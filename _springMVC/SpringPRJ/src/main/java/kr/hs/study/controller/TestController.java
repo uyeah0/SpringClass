@@ -40,7 +40,7 @@ public class TestController {
 		String result = "";
 		for(int i = 1; i <= 10; i++) {
 			System.out.print( number + " x " + i + " = " + number*i + "\n");
-			result += Integer.toString(number) + " x " + Integer.toString(i) + " = " + number*i + "\n";
+			result += Integer.toString(number) + " x " + Integer.toString(i) + " = " + number*i + "<br>";
 		}
 		
 		model.addAttribute("result", result);

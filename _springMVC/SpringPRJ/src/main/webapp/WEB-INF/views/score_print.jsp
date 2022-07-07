@@ -4,17 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<link rel="stylesheet" href="css/test.css">
 <title>Insert title here</title>
 </head>
 <body>
-
-<a href="sum">1부터 10까지의 합</a>
-<a href="multi_table">구구단</a>
-<a href="score">성적구하기</a>
-
-
-
-
+	${result }
 </body>
 </html>

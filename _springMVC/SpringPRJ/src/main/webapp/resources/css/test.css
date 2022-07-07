@@ -1,0 +1,11 @@
+@charset "EUC-KR";
+
+a { 
+	text-decoration: none; 
+    color: #000000;	
+}
+
+a:hover { 
+	text-decoration: underline; 
+	  color: orange;	
+	}
